@@ -13,7 +13,8 @@
 ---
 
 ## Block Diagram  
-*(Insert block diagram here if available)*  
+<img width="945" height="529" alt="image" src="https://github.com/user-attachments/assets/2134c3b5-fd33-496e-8a65-846fe4065533" />
+
 
 ---
 
@@ -42,6 +43,9 @@ case (addr_byte[7:1])
   default: slave_select = 1'bz;
 endcase
 ```
+
+<img width="940" height="276" alt="image" src="https://github.com/user-attachments/assets/c192c242-6ed9-49b4-8191-ec732216dd04" />
+
 ---
 
 ## Design Challenges Faced  
