@@ -10,18 +10,18 @@ wire sda;
 
 assign sda = sda_en ? sda_drive : 1'bz;
 
-wire scl_m1, scl_m2;
-wire sda_m1, sda_m2;
+wire scl_s1, scl_s2;
+wire sda_s1, sda_s2;
 
 i2c_addr_translator dut (
     .clk(clk),
     .reset(rst_n),
     .scl(scl),
     .sda(sda),
-    .scl_s1(scl_m1),
-    .sda_s1(sda_m1),
-    .scl_s2(scl_m2),
-    .sda_s2(sda_m2)
+    .scl_s1(scl_s1),
+    .sda_s1(sda_s1),
+    .scl_s2(scl_s2),
+    .sda_s2(sda_s2)
 );
 
 // Clock generation
